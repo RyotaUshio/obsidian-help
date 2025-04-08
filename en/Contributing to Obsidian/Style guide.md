@@ -1,19 +1,29 @@
 ---
 aliases:
   - Obsidian Style Guide
+description: This page explains the style guide for writing our support documentation.
+publish: true
+mobile: true
+permalink: style-guide
 ---
 The Obsidian documentation uses the [Google developer documentation style guide](https://developers.google.com/style). For any topics not covered by the Google style guide, use the [Microsoft Style Guide](https://learn.microsoft.com/en-us/style-guide/).
 
-This page lists any deviances from the Google style guide, or terminology worth highlighting.
+This page lists any deviations from the Google style guide, or terminology worth highlighting.
 
 > [!tip] Contribute
 > Most of the documentation existed before this style guide did. If you find any violations of this style guide, please [create an issue](https://github.com/obsidianmd/obsidian-docs/issues/new) or submit a pull request to [obsidianmd/obsidian-docs](https://github.com/obsidianmd/obsidian-docs).
 
 ## Terminology and grammar
 
+## Language style
+
+For our English documentation, it is recommended to use [Global English](https://docs.openedx.org/en/latest/documentors/references/doc_english_writing.html) to better serve our worldwide audience.
+
+### Terms
+
 - Prefer "keyboard shortcut" over "hotkey". Use Hotkey when referring to the specific feature.
 - Prefer "the Obsidian app" on mobile, and "the Obsidian application" on desktop.
-- Prefer "sync" or "syncing" over "synchronize" or "synchronizing".
+- Prefer "sync" or "syncing" over "synchronise" or "synchronising".
 - Prefer "search term" over "search query".
 - Prefer "heading" over "header" when referring to a text that introduces a section.
 - Prefer "maximum" over "max" and "minimum" over "min".
@@ -30,6 +40,7 @@ _To allow device-specific configuration, Obsidian Sync doesn't sync its own sett
 
 ### UI and interactions
 
+- Use **bold** to indicate button text
 - Prefer "select" over "tap" or "click".
 - Prefer "sidebar" over "side bar".
 - Prefer "perform" over "invoke" and "execute" when referring to commands or actions.
@@ -83,6 +94,14 @@ Don't indicate a direction when referring to settings. The location of the setti
 
 - To the right of **Pick remote vault**, select **Choose**.
 
+### Instructions
+
+Use imperatives for the names of guides, section headings, and step-by-step instructions. The imperative mood is concise and action-oriented, which is more straightforward for users following instructions.
+
+- Prefer "Set up" over "Setting up"
+- Prefer "Move a file" over "Moving a file"
+- Prefer "Import your notes" over "Importing your notes"
+
 ### Sentence case
 
 Prefer *sentence case* over *title case* for headings, buttons, and titles. When referencing UI elements always match the case of the text in the UI.
@@ -94,6 +113,7 @@ Prefer *sentence case* over *title case* for headings, buttons, and titles. When
 **Not recommended:**
 
 - How Obsidian Stores Data
+
 ### Examples
 
 Prefer realistic examples over nonsense terms.
@@ -164,7 +184,7 @@ Include icons and images when they make it easier to explain things that are har
 ![[Style-guide-zoomed-example.png#interface|300]]
 
 - Images should be in either `.png` or `.svg` format.
-- If an image looks too big in the note, make it smaller outside of Obsidian, or adjust its dimensions as explained in [[Embedding files#Embed an image in a note|embedding an image in a note]].
+- If an image looks too big in the note, make it smaller outside of Obsidian, or adjust its dimensions as explained in [[Embed files#Embed an image in a note|embedding an image in a note]].
 - In rare cases, you may want to place especially large or complex images in a [[Callouts#Foldable callouts|folded callout]]. 
 - For pop-up windows or modals, the image should show the entire Obsidian application window.
  ![[Style-guide-modal-example.png#interface]]
@@ -179,7 +199,7 @@ Include icons and images when they make it easier to explain things that are har
 
 - Store icons in the `Attachments/icons` folder.
 - Add the prefix `lucide-` before the Lucide icon name.
-- Add the prefix `obsidian-` before the Obsidian icon name.
+- Add the prefix `obsidian-icon-` before the Obsidian icon name.
 
 **Example:** The icon for creating a new canvas should be named `lucide-layout-dashboard`.
 
@@ -211,7 +231,6 @@ The icon anchor tag ensures correct vertical alignment for icons used to indicat
 
 The first menu icon uses the anchor tag ( ![[lucide-menu.svg#icon]] ), while the second menu icon ( ![[lucide-menu.svg]] ) does not.
 
-
 **Interface**
 
 `![[Vault picker.png#interface]]`
@@ -242,7 +261,6 @@ Images slow the loading time of the page, and take valuable [[Introduction to Ob
 
 Both images and icons should be optimized.
 
-
 > [!success] Tools for optimizing images
 > Here are a some recommended programs for reducing the size of your images.
 > - **Windows:** [FileOptimizer](https://sourceforge.net/projects/nikkhokkho/)
@@ -250,3 +268,36 @@ Both images and icons should be optimized.
 > - **Linux/Unix** [Trimage](https://trimage.org)
 > 
 > We recommend an optimization rate of 65-75%.
+
+## Layout
+
+### Broken links
+
+Before submitting your Pull Request, please check for any broken links in the documentation of the translation you are working on and correct them. Broken links can occur naturally over time, so verifying their accuracy helps maintain the quality of the documentation.
+
+You can check for broken links using [[Community plugins]] or tools available in your IDE.
+
+### Descriptions
+
+This documentation is edited on GitHub and hosted online via [[Introduction to Obsidian Publish|Obsidian Publish]], which includes [[Social media link previews#Description|descriptions]] for social cards and other [[SEO]] elements.
+
+If the page you are working on does not have a `description` [[Properties|property]], please add one. The description should be 150 characters or fewer and provide an objective summary of the page’s content.
+
+**Good**: Learn to create templates that capture and organize web page metadata automatically with Web Clipper.
+**Could be tweaked**: Learn how to create templates that automatically capture and organize metadata from web pages with Web Clipper.
+
+### Directions
+
+When writing or rewriting [[#Instructions]] on how to perform an action within the app, be sure to include steps for both the mobile and desktop versions.
+
+If you do not have access to a mobile or desktop device, please mention this when submitting your Pull Request.
+
+## Translations
+
+  Translate the entirety of the content when completing a translation. This includes and is not limited to:
+
+- Note names
+- Folder names
+- Aliases
+- Attachment names
+- Alt link text

@@ -1,3 +1,6 @@
+---
+permalink: plugins/note-composer
+---
 Note composer lets you merge two notes or extract part of a note into a new note.
 
 ## Merge notes
@@ -54,7 +57,7 @@ To extract text into a new note:
 4. Select the note you want to extract into.
 
 > [!tip]
-> By default, Note composer replaces the extracted text with a link to the destination note. Under settings, you can also change to instead [[Embedding files|embed]] the destination note, or to leave nothing behind.
+> By default, Note composer replaces the extracted text with a link to the destination note. Under settings, you can also change to instead [[Embed files|embed]] the destination note, or to leave nothing behind.
 
 ## Template file
 

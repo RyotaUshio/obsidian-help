@@ -9,10 +9,12 @@ The docs for each language are stand-alone vaults with a corresponding [Obsidian
 | Language | URL                                     |
 | -------- | --------------------------------------- |
 | `en`     | https://help.obsidian.md/               |
+| `ar`     | https://publish.obsidian.md/help-ar/    |
 | `da`     | https://publish.obsidian.md/help-da/    |
 | `es`     | https://publish.obsidian.md/help-es/    |
 | `it`     | https://publish.obsidian.md/help-it/    |
 | `ja`     | https://publish.obsidian.md/help-ja/    |
+| `ko`     | https://publish.obsidian.md/help-ko/    |
 | `pt-br`  | https://publish.obsidian.md/help-pt-br/ |
 | `ru`     | https://publish.obsidian.md/help-ru/    |
 | `vi`     | https://publish.obsidian.md/help-vi/    |
@@ -71,13 +73,6 @@ The docs under the following folders have been updated to the new organization a
 - [x] Obsidian Sync
 - [x] Plugins
 
-The docs in the following folders have yet to be updated, and may change considerably in the future. Any work done on these docs has a high risk of becoming outdated.
-
-- [ ] Advanced topics
-- [ ] Concepts
-- [ ] Customization
-- [ ] How to
-- [ ] User interface
 
 ## Credits
 

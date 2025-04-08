@@ -1,8 +1,11 @@
+---
+permalink: android
+---
 This help article is legacy and only serves as a bridge to avoid breaking links. For information on the mobile app, please see [[Sync your notes across devices]].
 
 ## Sync
 
-For information on syncing on the Android app, please see [[Sync your notes across devices#Sync notes on Android|Sync notes on Android]].
+For information on syncing on the Android app, please see [[Sync your notes across devices]].
 
 ## Storage permissions
 
@@ -16,3 +19,5 @@ The two biggest roadblocks are:
 - Scoped storage doesn't provide a way to watch for external changes, which is critical when using Obsidian with a third-party syncing tool.
 
 Google specifically gives instructions for developers of this kind of apps a special permission. Obsidian belongs to two categories in the list of exceptions: "document management apps", and "on-device file search". [Read more about it here.](https://developer.android.com/training/data-storage/manage-all-files)
+
+Visit our [Security page](https://obsidian.md/security) to learn more about how we ensure Obsidian meets the highest security standards.

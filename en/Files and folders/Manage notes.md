@@ -1,10 +1,10 @@
 ---
 aliases:
-- Advanced topics/Deleting files
-- How to/Rename notes
+  - Advanced topics/Deleting files
+  - How to/Rename notes
+permalink: manage-notes
 ---
-
-You can manage files and folders in several ways, using [[custom hotkeys]], [[Command palette|commands]], or [[File explorer]].
+You can manage files and folders in several ways, using [[Hotkeys]], [[Command palette|commands]], or [[File explorer]].
 
 ## Create a new note
 

@@ -2,9 +2,9 @@
 aliases:
   - How to/Update Obsidian
   - Installer version update
+permalink: updates
 ---
-
-Obsidian checks for new updates regularly. When a new update is available, Obsidian applies it when you restart the application.
+Obsidian regularly checks for new updates. If automatic updates are enabled, the application will apply any available updates when you restart it.
 
 ## Check for an update and the current version
 
@@ -14,7 +14,7 @@ You can find the current Obsidian version and installer version in the upper-lef
 
 ![[application-installer-current-version.png#interface]]
 
-To apply any available updates, click **Relaunch**.
+To check for updates, select **Check for updates**. If there are new updates, this button will change to **Relaunch**. select **Relaunch** to apply any available updates.
 
 ## Disable automatic updates
 
@@ -39,7 +39,7 @@ To update Obsidian when an installer update is required:
 
 Your installer update is now complete. You may now re-open Obsidian.
 
-> [!Question]- Q1. A plugin author or theme developer is asking me to update my installer, but the Obsidian team has not. Why?
+> [!Question]- A plugin author or theme developer is asking me to update my installer, but the Obsidian team has not. Why?
 > This is very common when we have internal library updates within the installer that do not need a minimum application version update, which would force everyone to update. 
 > 
 > For example, if you were using a PDF annotation plugin, and we updated the `pdf.js` library within Obsidian, the plugin author would want to take advantage of updates of that library. 

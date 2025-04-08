@@ -1,21 +1,22 @@
 ---
-aliases: How to/Manage attachments
+aliases:
+  - How to/Manage attachments
+permalink: attachments
 ---
-
-You can import [[Accepted file formats]], or _attachments_, to your vault, such as images, audio files, or PDFs. Attachments are regular files that you can access using your file system.
+You can import [[Accepted file formats]], or _attachments_, to your vault, such as images, audio files, or PDFs. Attachments are regular files that you can access using your file system. Attachments can be [[Embed files|embedded]].
 
 ## Add an attachment
 
 You can add attachments to your vault in multiple ways. Only [[Accepted file formats]] can be added.
 
 > [!todo]- Copy and paste attachments
-> You can paste attachments directly into your notes. Obsidian creates a file with the pasted content in the default attachment location and [[Embedding files|embeds]] it in the note.
+> You can paste attachments directly into your notes. Obsidian creates a file with the pasted content in the default attachment location and [[Embed files|embeds]] it in the note.
 
 > [!todo]- Drag and drop attachments
-> If you drag a file from your file system into an open editor, Obsidian copies the file to the default attachment location and [[Embedding files|embeds]] it in the note.
+> If you drag a file from your file system into an open editor, Obsidian copies the file to the default attachment location and [[Embed files|embeds]] it in the note.
 
  > [!todo]- Download attachments to vault folder
- > You can download an attachment directly to your vault, for example if you  [[Import notes#Import from browser|import from your browser]], or from other apps that saves files directly to your file system.
+ > You can download an attachment directly to your vault, for example if you  [[Import notes#More formats|import from your browser]], or from other apps that saves files directly to your file system.
 
 ## Change default attachment location
 

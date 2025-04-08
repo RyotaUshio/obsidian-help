@@ -1,3 +1,6 @@
+---
+permalink: mobile
+---
 The mobile app aims to provide a familiar user experience for those already using the desktop app.
 
 That being said, there are a few features unique to the mobile app. In this guide, you’ll learn about them to get the most use out of the mobile app.
@@ -42,7 +45,7 @@ Quick Action defaults to open [[Command palette]].
 ### Customize Quick Action
 
 1. Open Settings.
-2. Choose **Mobile**.
+2. Under **Options**, choose **Toolbar**.
 3. Under **Configure mobile Quick Action**, tap **Configure**.
 4. Type the name of the command.
 5. Select the command you’d like to set.
@@ -58,7 +61,7 @@ With the **Toggle keyboard** toolbar option, you can close the mobile toolbar an
 
 ### Go back or forward
 
-On the navigation bar, the first two options helps you go back (back arrow icon) or forward (forward arrow icon). If one of the options is not available, the icon is greyed out.
+On the navigation bar, the first two options helps you go back ( ![[lucide-chevron-left.svg#icon]] ) or forward ( ![[lucide-chevron-right.svg#icon]] ). If one of the options is not available, the icon is greyed out.
 
 ### Create or find note
 
@@ -66,9 +69,10 @@ The middle plus in circle icon lets you create a new note or switch to an existi
 
 ### Tab management
 
-The second icon to the right shows you how many tabs are currently open. The icon looks like a number in a box.
+The second icon to the right shows you how many tabs are currently open. The icon looks like a number in a box. For example, the icon below indicates there are two tabs open.
 
-When you tap it, you’ll be able to switch to any open tab. You can also a new tab.
+<span class="mobile-navbar-tabs-action">2</span>
+When you tap it, you’ll be able to switch to any open tab. You can also open a new tab.
 
 ### Ribbon actions
 

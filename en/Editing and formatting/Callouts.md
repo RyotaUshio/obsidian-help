@@ -1,6 +1,10 @@
 ---
 aliases:
-- How to/Use callouts
+  - How to/Use callouts
+description: This page details how to use callouts to include additional content without breaking the flow of your notes.
+mobile: true
+publish: true
+permalink: callouts
 ---
 
 Use callouts to include additional content without breaking the flow of your notes.
@@ -16,7 +20,7 @@ To create a callout, add `[!info]` to the first line of a blockquote, where `inf
 
 > [!info]
 > Here's a callout block.
-> It supports **Markdown**, [[Internal links|Wikilinks]] and [[Embedding files|embeds]]!
+> It supports **Markdown**, [[Internal links|Wikilinks]] and [[Embed files|embeds]]!
 > ![[Engelbart.jpg]]
 
 Callouts are also supported natively on [[Introduction to Obsidian Publish|Obsidian Publish]].
@@ -105,7 +109,7 @@ The value of the `data-callout` attribute is the type identifier you want to use
 
 You can use several callout types and aliases. Each type comes with a different background color and icon.
 
-To use these default styles, replace `info` in the examples with any of these types, such as `[!tip]` or `[!warning]`.
+To use these default styles, replace `info` in the examples with any of these types, such as `[!tip]` or `[!warning]`. Callout types can also be changed by right-clicking a callout.
 
 Unless you [[#Customize callouts]], any unsupported type defaults to the `note` type. The type identifier is case-insensitive.
 

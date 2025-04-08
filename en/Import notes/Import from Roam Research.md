@@ -1,11 +1,11 @@
 ---
 permalink: import/roam
 ---
-Obsidian allows you to easily migrate your notes from Roam Research  using the [[Importer|Importer plugin]].
+Obsidian allows you to easily migrate your notes from Roam Research  using the [[Importer|Importer plugin]]. This will convert your Roam data to durable Markdown files, that you can use with Obsidian and many other apps.
 
 ## Export your data from Roam Research
 
-1. In Roam Research, click on **More actions** (`•••` icon) in the upper-right corner, and then select **Export All**.
+1. In Roam Research, click on **More actions** ( `•••` ) in the upper-right corner, and then select **Export All**.
    
    ![[Roam-exporting.png#interface]]
 2. In **Export Format**, select "JSON", and then select **Export All** to download an archive with your notes.

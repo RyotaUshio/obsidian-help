@@ -1,42 +1,62 @@
-This page lists common issues that you might encounter, and how to address them.
+---
+aliases:
+cssclasses:
+  - soft-embed
+description: This page lists uncommon issues you may encounter with Obsidian Sync and how to resolve them.
+mobile: true
+permalink: sync/troubleshoot
+publish: true
+---
 
-![[Sync your notes across devices#^sync-files-on-demand]]
+This page lists uncommon issues you may encounter with [[Introduction to Obsidian Sync|Obsidian Sync]] and how to resolve them. Before proceeding, we recommend reviewing the [[Status icon and messages]] and [[Frequently asked questions]] pages.
 
-## Conflict resolution
+## General
 
-A conflict happens when you make changes to the same file on two or more devices between syncs. For example, you might have changed a file on your computer, and before that change is uploaded, you also change the same file on your phone.
+### Conflict resolution
 
-Conflicts usually happen more frequently if you work offline, since there are more changes and a longer period of time between syncs and thus more potential conflicts.
+A conflict occurs when changes are made to the same note on two or more devices before they have synced. For example, if you edit a note on your computer and, before that change uploads, you also modify the same note on your phone.
 
-When Sync downloads a new version of a file, and finds that there are conflicts with the local version, the changes are merged with Google's [diff-match-patch](https://github.com/google/diff-match-patch) algorithm.
+Conflicts are more common when working offline, as there are more changes and longer periods between syncs, increasing the chance of conflicts.
 
-> [!help] To find when conflicts have happened, you can search for "Merging conflicted file" in **Settings → Sync → Sync activity → View**.
+When Obsidian Sync detects a conflict between the local and remote versions of a note, it merges the changes using Google's [diff-match-patch](https://github.com/google/diff-match-patch) algorithm.
 
-## Obsidian Sync deleted a note I just created on two devices
+For conflicts in Obsidian settings, such as plugin settings, the process is different. Obsidian Sync merges the JSON files by applying keys from the local JSON on top of the remote JSON.
 
-Generally, Obsidian Sync tries to [[#Conflict resolution|resolve conflicts]] between devices by merging the content of the conflicting notes. Unfortunately, merging conflicting notes can cause issues for users who <u>automatically generate</u> or <u>alter notes</u> on startup, for example using [[Daily notes]].
+> [!help] To check when conflicts occurred, filter for "Merge Conflicts" in the [[Status icon and messages#Sync log|Sync log]].
 
-If a note was created locally on a device less than a couple of minutes before Sync downloads a remote version of that note, then Sync keeps the remote version without attempting to merge the two. You can still recover the local version using [[File recovery]].
+###  Sync deleted a note I just created on two devices
 
-## What does the `vault limit exceeded` error mean?
+Obsidian Sync typically attempts to [[#Conflict resolution|resolve conflicts]] by merging conflicting notes across devices. However, issues can occur for users who _automatically generate_ or _modify notes_ on startup, such as with [[Daily notes]] or when using the community plugin [Templater](https://github.com/SilentVoid13/Templater).
 
-Your account exceeds the [[Sync limitations#How large can each remote vault be|maximum size of 50 GB]]. See [[Remote vault size limit]].
+If a note is created locally on one device and, within a couple of minutes, Sync downloads a remote version of that same note, Sync will retain the remote version without merging the two. In this case, you can recover the local version using [[File recovery]].
 
-Since attachments and version history contributes to the total size of your vault, your vault can exceed the maximum size even if the actual size of your vault is less than the limit.
+### Sync will not Sync my plugins and settings updates
 
-To identify and purge large files from the vault:
+Obsidian [[Frequently asked questions#Does Obsidian Sync live-reload my settings?|does not live-reload all settings]]. After updating settings or plugins, you'll need to restart Obsidian on other devices to reflect the changes. On mobile devices, a force-quit of the app may be necessary.
 
-1. Open **Settings → Sync**.
-2. Explore the options under **Vault size over limit** for how you can reduce the size of your vault.
+> [!example] Changing a theme
+> - On your primary device (usually a computer), you change your theme back to the default from a custom theme.
+> - The Sync log confirms the updated files were sent to the remote vault, but your mobile device still shows the custom theme.
+> - On the mobile device, check the Sync log to confirm receipt of the updated `appearance.json` file.
+> - Reload or Restart Obsidian on the mobile device.
+> - After reloading or restarting, the mobile device should display the same theme as your computer.
 
-## What is this "Vault not found" message?
+### My files keep disappearing from Sync as soon as I restore it
 
-`{"res":"err","msg":"Vault not found."}`
+This issue is most commonly seen on Windows, where Windows Defender may quarantine files with code blocks, causing certain notes to disappear.
 
-This error may occur in the following scenarios:
+Another frequent cause is double-syncing, where Obsidian Sync is running alongside another syncing service.
 
-1. The vault has been deleted from another device for any reason.
-2. The sync subscription was inactive for over 30 days, leading to the removal of the remote vault.
-3. The subscription was canceled or refunded, resulting in the purging of the remote vault.
+![[Switch to Obsidian Sync#Moving your vault out of a third-party syncing service]]
 
-In each case, it is necessary to disconnect from the remote vault and establish a new connection, ensuring the data on your device is retained.
+---
+
+Finally, this can happen when a file is restored on one device, but then removed from a secondary device due to [[Status icon and messages#Skipped messages|illegal characters]] in the filename.
+
+## Android
+
+**My device is deleting my attachments I receive through Sync**
+
+This issue is likely due to Google or Android Photos managing your attachments. To prevent the system from altering files received via Sync, add a `.nomedia` [file to your vault](https://support.google.com/android/thread/60342076/what-are-these-nomedia-files?hl=en) on your Android device.
+
+> [!tip] The community plugin [Android Nomedia](https://obsidian.md/plugins?id=android-nomedia) simplifies this process. Install it on your Android phone, as `.nomedia` files are not synced across devices through Obsidian Sync.

@@ -1,7 +1,8 @@
 ---
-aliases: How to/Basic note taking
+aliases:
+  - How to/Basic note taking
+permalink: link-notes
 ---
-
 While Obsidian is great for taking notes, the true power of Obsidian lies in being able to link your notes together. By understanding how one piece of information relates to another, you can improve your ability to remember them and to form deeper insights. In this guide, you'll learn how to create and navigate links in Obsidian.
 
 ## Step 1: Create a link
@@ -45,13 +46,13 @@ Another way to navigate between notes is through _backlinks_. A backlink lets yo
 Another way to navigate between your notes is by using a visual representation of how your notes are connected.
 
 **Desktop**
-1. In the upper-right corner of the note, click **More options** (three dots).
+1. In the upper-right corner of the note, click **More options** (![[lucide-more-horizontal.svg#icon]]).
 2. Select **Open linked view**.
 3. Select **Open local graph**.
 4. Click any of the nodes in the graph to navigate to that note.
 
 **Mobile**
-1. In the top of the note, select **More options** (three dots).
+1. In the top of the note, select **More options** (![[lucide-more-horizontal.svg#icon]]).
 2. Select **Open local graph**.
 3. Click any of the nodes in the graph to navigate to that note.
 

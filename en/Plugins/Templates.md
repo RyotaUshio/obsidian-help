@@ -1,8 +1,11 @@
+---
+permalink: plugins/templates
+---
 You can use Templates to insert pre-defined snippets of text into your active note.
 
 ## Set your template folder
 
-1. In the bottom-left corner, click **Settings** (cog icon).
+1. In the bottom-left corner, click **Settings** ( ![[lucide-cog.svg#icon]] ).
 2. Under **Core plugins → Templates → Template folder location**, enter the folder containing your templates.
 
 ## Insert a template into the active note

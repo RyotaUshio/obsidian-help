@@ -1,3 +1,6 @@
+---
+permalink: glossary
+---
 This glossary includes common Obsidian terminology.
 
 ## Alias
@@ -14,7 +17,7 @@ A **command** is an action that can be performed either by selecting it from the
 
 ## Embed
 
-**Embedding** means replacing a reference to external content with the content itself, for example to include an image in your note. See also [[Embedding files]].
+**Embedding** means replacing a reference to external content with the content itself, for example to include an image in your note. See also [[Embed files]].
 
 ## Frontmatter
 
@@ -26,7 +29,7 @@ A **graph** is a visualization that highlights connections between [[#note|notes
 
 ## Hotkey
 
-A **hotkey** is a keyboard shortcut for a [[#command]]. See also [[Custom hotkeys]] and [[Custom hotkeys|How to/Use hotkeys]].
+A **hotkey** is a keyboard shortcut for a [[#command]]. See also [[Hotkeys]] and [[Hotkeys|How to/Use hotkeys]].
 
 ## Link
 
@@ -88,7 +91,7 @@ The **status bar** in the Obsidian application shows you essential statistics an
 
 ## Tab
 
-A **tab** contains a [[#view]]. Tabs can be repositioned within the [[#main area]] and the [[#sidebar|sidebars]]. See also [[Use tabs in Obsidian]].
+A **tab** contains a [[#view]]. Tabs can be repositioned within the [[#main area]] and the [[#sidebar|sidebars]]. See also [[Tabs]].
 
 ## Tab group
 
@@ -104,7 +107,15 @@ A **theme** changes the appearance of the Obsidian app using [CSS](https://devel
 
 ## Vault
 
+`Aliases: local vault, local data`
+
 A **vault** is a folder on your file system which contains [[#note|notes]] and an `.obsidian` folder with Obsidian-specific configuration. See also [[How Obsidian stores data]].
+
+### Remote vault
+
+`Aliases: Remote data`
+
+A [[Local and remote vaults|remote vault]] is a copy of your local vault that is maintained with [[Introduction to Obsidian Sync|Obsidian Sync]]. The remote vault data is updated based on changes to local data. 
 
 ## View
 

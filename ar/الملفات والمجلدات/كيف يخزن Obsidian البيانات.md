@@ -1,7 +1,7 @@
 ---
+permalink: files-and-folders/how-obsidian-stores-data
 aliases:
   - مواضيع متقدمة/كيف يخزن Obsidian البيانات
-permalink: files-and-folders/how-obsidian-stores-data
 ---
 
 يخزن Obsidian ملاحظاتك على شكل ملفات نصية بسيطة منسقة باستخدام [[صيغ التنسيق الأساسية|Markdown]] في مجلد يسمى "vault". وهو مجلد على نظام الملفات المحلي الخاص بك، بما في ذلك أي مجلدات فرعية.
@@ -33,7 +33,7 @@ permalink: files-and-folders/how-obsidian-stores-data
 
 - **macOS**: <code dir="ltr">/Users/yourusername/Library/Application Support/obsidian</code>
 - **Windows**: <code dir="ltr">%APPDATA%\Obsidian&#92;</code>
-- **Linux**: <code dir="ltr">$XDG_CONFIG_HOME/Obsidian/</code> أو <code dir="ltr">~/.config/Obsidian/</code>
+- **Linux**: <code dir="ltr">$XDG_CONFIG_HOME/obsidian/</code> أو <code dir="ltr">~/.config/obsidian/</code>
 
 > [!تحذير]
 > لا تقم بإنشاء قبو في مجلد النظام. قد يؤدي ذلك إلى تلف البيانات أو فقدانها.
